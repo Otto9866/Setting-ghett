@@ -102,7 +102,7 @@ do {
             Remove-Job $job
             Write-Host "`r Done!              " -ForegroundColor Green
             Write-Host ""
-            Read-Host "Press Enter to go back"
+            Read-Host "Press Enter "
         }
         "R" {
             Clear-Host
@@ -131,10 +131,12 @@ do {
             Remove-Job $job
             Write-Host "`r Done!              " -ForegroundColor Green
             Write-Host ""
-            Read-Host "Press Enter to go back"
+            Read-Host "Press Enter "
         }
         "Q" {
             Write-Host "Exiting..." -ForegroundColor Gray
+            Start-Sleep -Seconds 1
+            exit 
         }
     }
 
